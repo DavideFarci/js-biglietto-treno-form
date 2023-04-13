@@ -23,6 +23,10 @@ eleCalc.addEventListener("click", function() {
         document.getElementById("tariffa").innerHTML = "Tariffa over 65";
         document.getElementById("price").innerHTML = prezzoOver.toFixed(2);
     }
-
+    if (isNaN(numKM)) {
+        // alert("ricontrolla i valori inseriti")
+        document.getElementById("price").innerHTML = "Scemo, sei scemo!";
+    }
+    
     document.getElementById("name_pass").innerHTML = nameUser ;
 })
