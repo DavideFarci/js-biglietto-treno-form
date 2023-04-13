@@ -2,6 +2,7 @@
 
 const eleCalc = document.querySelector(".calc");
 eleCalc.addEventListener("click", function() {
+    const nameUser = document.getElementById("name");
     const numKM = document.getElementById("numKM").value; 
     const age = document.getElementById("age").value;
 
@@ -10,6 +11,7 @@ eleCalc.addEventListener("click", function() {
     const prezzoOver = (numKM * 0.21) - ((numKM * 0.21) * 40 / 100);
 
     if (age == "normal") {
+        document.getElementById("name_pass").innerHTML = nameUser;
         document.getElementById("price").innerHTML = prezzo.toFixed(2);
     }
     if (age == "minorenne") {

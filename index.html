@@ -23,11 +23,12 @@
     </select>  -->
 
     <div class="container">
-        <div class="row flex-column">
+        <h1 class="text-light text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="row flex-column bg-light py-2 rounded ">
 
-            <div class="user_input text-center mb-3">
+            <div class="user_input text-center mb-3 ">
                 <div class="d-inline-block">
-                    <label class="form-label">Nome e Cognome</label><br>
+                    <label id="name" class="form-label">Nome e Cognome</label><br>
                     <input type="text" class="form-control d-inline-block">
                 </div>
                 <div class="d-inline-block">
@@ -51,11 +52,32 @@
             </div>
 
         </div>
+
+        <h2 class="text-light text-center mt-4">IL TUO BIGLIETTO</h2>
+        <div class="ticket_details bg-light p-3 rounded">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome passeggero</th>
+                    <th scope="col">Offerta</th>
+                    <th scope="col">Carrozza</th>
+                    <th scope="col">Codice CP</th>
+                    <th scope="col">Costo biglietto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span id="name_pass"></span></td>
+                    <td>Mark</td>
+                    <td>5</td>
+                    <td>26845</td>
+                    <td>€ <span id="price"></span></div></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
     </div>
         
-
-    <div>Il prezzo del biglietto è: <span id="price"></span></div>
-
 
 
 
