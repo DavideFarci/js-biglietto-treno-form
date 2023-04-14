@@ -17,7 +17,7 @@
         <h1 class="text-light text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="row flex-column bg-light py-2 rounded ">
 
-            <div class="user_input text-center mb-3 ">
+            <form id="user_input" class="user_input text-center mb-3 ">
                 <div class="d-inline-block">
                     <label class="form-label">Nome e Cognome</label><br>
                     <input id="name" type="text" class="form-control d-inline-block">
@@ -35,11 +35,11 @@
                         <option value="normal">Nessuna delle precedenti</option>
                     </select>
                 </div>
-            </div>
+            </form>
 
             <div class="text-center">
                 <button class="calc">Calcola</button>
-                <button type="reset">Cancella</button>
+                <button onclick="resetForm()">Cancella</button>
             </div>
 
         </div>

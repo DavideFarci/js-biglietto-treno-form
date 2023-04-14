@@ -30,3 +30,7 @@ eleCalc.addEventListener("click", function() {
     
     document.getElementById("name_pass").innerHTML = nameUser ;
 })
+
+function resetForm() {
+    document.getElementById("user_input").reset();
+}
