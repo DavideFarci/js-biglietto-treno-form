@@ -1,7 +1,6 @@
-html {
-    background-color: #B91450;
-}
-
 body {
-    background-color: #B91450;
+    height: 100vh;
+    background-color: #EF4136;
+    background-image: url(..//assets/img/icona-della-linea-del-treno-di-locomotiva-vapore-su-sfondo-rosso-vettoriale-stile-piatto-illustrazione-179113464.jpg);
+    background-position: center bottom -3rem;
 }
