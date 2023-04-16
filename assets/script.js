@@ -25,12 +25,27 @@ eleCalc.addEventListener("click", function() {
     }
     if (isNaN(numKM)) {
         // alert("ricontrolla i valori inseriti")
-        document.getElementById("price").innerHTML = "Scemo, sei scemo!";
+        document.getElementById("price").innerHTML = "Sei scemo!";
     }
     
     document.getElementById("name_pass").innerHTML = nameUser ;
+    document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("codice_cp").innerHTML = Math.floor(Math.random() * (99999 - 10000) + 10000);
+
 })
 
 function resetForm() {
     document.getElementById("user_input").reset();
 }
+
+/*
+alternativa per creare un bottone di reset,
+va però prima creata la variabile per che selezioni il bottone!
+
+btnReset.addEventListener("click",
+    function(){
+        numKM.value = "";
+        age.value = "";
+
+    })
+*/
